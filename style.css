@@ -12,7 +12,7 @@ body {
 
 .dashboard {
     display: grid;
-    grid-template-columns: minmax(300px, 1fr) 4fr;
+    grid-template-columns: minmax(270px, 1fr) 4fr;
     height: 100%;
 }
 
@@ -42,10 +42,13 @@ body {
     margin: 20px 0;
     display: grid;
     grid-template-columns: 50px 1fr;
-    gap: 10px;
+    gap: 14px;
     align-items: center;
 }
 
+#sidebar-gap {
+    margin-top: 50px;
+}
 .side-nav a {
     text-decoration: none;
     color: #ffffff;
