@@ -8,7 +8,7 @@
 
 :root {
     --navbar-blue: #1992d4;
-    --grey-bg: rgba(226,232,240,255);
+    --grey-bg: #e2e8f0; 
 }
 
 body {
@@ -64,7 +64,7 @@ img.small {
 .side-nav img {
     filter: invert(100%) sepia(0%) saturate(7500%) 
     hue-rotate(354deg) brightness(103%) contrast(103%);
-    justify-self: center;;
+    justify-self: center;
 }
 
 .header > img {
@@ -72,8 +72,10 @@ img.small {
 } 
 
 .top {
-    padding: 20px 50px 10px;
-    box-shadow: 0 3px 3px 2px #ccc;
+    padding: 10px 50px 10px;
+    box-shadow: 0 2px 3px 1px #cdd2d9;
+    z-index:0;
+    position: relative;
 }
 
 .medium {
@@ -136,4 +138,8 @@ img.small {
 }
 .second button:hover {
     transform: scale(1.1) perspective(1px);
+}
+
+.bottom {
+    background-color: var(--grey-bg);
 }
