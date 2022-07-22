@@ -15,9 +15,9 @@
 }
 
 body {
-    display: grid;
-    grid-template-columns: minmax(260px, 1fr) 4fr;
-    height: 100vh;
+    /* display: grid;
+    grid-template-columns: minmax(260px, 1fr) 4fr; 
+    height: 100vh;*/
 }
 
 img.small {
@@ -39,8 +39,17 @@ img.avatar {
 .side-nav {
     background-color: var(--navbar-blue);
     padding: 15px;
-    font-size: calc(14px + 0.3vw); 
+    font-size: 18px;
+    /* calc(14px + 0.3vw);  */
     font-weight: 600;
+
+    position: fixed;
+    height: 100%;
+    width: calc(250px + 0.01vw);
+}
+
+div.main-content {
+    margin-left: calc(250px + 0.01vw + 30px);  
 }
 
 .side-nav div {
@@ -185,7 +194,7 @@ img.avatar {
 .card {
     background-color: #ffffff;
     padding: 30px 20px 30px 40px;
-    height: 200px;
+    height: 170px;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background: linear-gradient(
