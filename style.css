@@ -214,3 +214,26 @@ img.large {
 }
 
 /* Announcements */
+.announcements > div{
+    height: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.announcements > div > span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.announcements > div > p {
+    color: #636363;
+    margin: 5px 0px 0px 0px;
+}
+
+.announcements hr {
+    margin: 20px 0 20px 0;
+    border-color: #63636322;
+}
+
