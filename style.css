@@ -140,6 +140,81 @@ img.small {
     transform: scale(1.1) perspective(1px);
 }
 
+.card:hover {
+    transform: scale(1.03) perspective(1px);
+}
+
 .bottom {
     background-color: var(--grey-bg);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
 }
+
+.bottom > .projects > span {
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px 20px 30px 40px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: linear-gradient(
+    to right,
+    #ffd8c9,
+    #ffd8c9 7px,
+    #ffffff 7px,
+    #ffffff 100%
+  );
+    display: grid;
+    grid-template-rows: 30px 1fr 20px;
+}
+
+.card > p {
+    margin-bottom: 5px; 
+}
+
+.card > span {
+    color: #636363;
+}
+
+.card > .links {
+    margin-top: 10px;
+    justify-self: end;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+}
+
+#bell:hover {
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s;
+    animation-iteration-count: 2;
+    animation-delay: .5s;
+    filter: invert(18%) sepia(75%) saturate(6502%) hue-rotate(358deg)
+    brightness(94%) contrast(124%);
+}
+@keyframes shake {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    20%,
+    60% {
+      transform: rotate(6deg);
+    }
+    40%,
+    80% {
+      transform: rotate(-6deg);
+    }
+  }
